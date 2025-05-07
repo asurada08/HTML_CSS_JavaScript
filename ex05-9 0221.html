@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>리스트로 메뉴 만들기</title>
+  <style>
+  #menuber{background:olive;}
+  #menuber ul{margin:0; padding:0; width:567px;}/*여백과 패딩 모드 0*//*모든 아이템(<li>을 한줄에 품을 수 있는 폭*/
+  #menuber ul li{display:inline-block; list-style-type:none; padding:0px 15px;}
+  /*새 줄로 넘어가지 않게 작성*//*마커 삭제*//*padding(top,bottom=0 left,right=15px*/
+  #menuber ul li a{color:white; text-decoration:none;}/*링크 보이지 않게함*/
+  #menuber ul li a:hover{color:violet;}/*마우스 올렸을때 글자가 변할 컬러*/
+  </style>
+ </head>
+ <body>
+  <nav id="menuber">
+  <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Espresso</a></li>
+  <li><a href="#">Cappuccino</a></li>
+  <li><a href="#">Cafe Latte</a></li>
+  <li><a href="#">F.A.Q</a></li>
+  </ul>
+  </nav>
+ </body>
+</html>
+<!--a href="#"에 #은 연결할 페이지 주소를 주면 된다-->

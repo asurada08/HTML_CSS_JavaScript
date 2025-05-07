@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <script>
+  let i=10, sum=0;
+  document.write("do-while<br>");
+  do{
+	  document.write(i,"&nbsp");
+	  sum+=i;
+	  i--;
+  }while(i>=0);
+  document.write("<br>10에서 0까지 합은 ",sum);
+
+  document.write("<br>while<br>");
+  let j=10, sum1=0;
+  while(j>=0){
+	  document.write(j,"&nbsp");
+	  sum1+=j;
+	  j--;
+  }
+  document.write("<br>10에서 0까지 합은 ",sum1);
+
+  document.write("<br>for<br>");
+  let k=10, sum2=0;
+  for(k=10;k>=0;k--){
+	  document.write(k,"&nbsp");
+	  sum2+=k;
+  }
+  document.write("<br>10에서 0까지 합은 ",sum2);
+  </script>
+ </body>
+</html>

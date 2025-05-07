@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제04</title>
+ </head>
+ <body>
+  <h3>documnet.write()로 표만들기</h3>
+  <hr>
+  <script>
+  document.write("<table border='1'>","<tbody>","<tr>","<th>","n","</th>");
+  document.write();
+  for(let i=0;i<=9;i++){
+	  document.write("<td>",i,"</td>");
+  }
+  document.write("</tr>","<tr>","<th>","n<sup>2</sup>","</th>");
+  for(let j=0;j<=9;j++){
+	  document.write("<td>",j*j,"</td>");
+  }
+  document.write("</tr>","</tbody>","</table>");
+  </script>
+ </body>
+</html>
+<!--
+for(let i=0;i<2;i++){
+if(i==0){
+document.write("<th><th>n</th>");
+else
+document.write("<tr><th>n<sup>2</th>");
+for(let i=0;i<=9;i++){
+	if(i==0)
+	  document.write("<td>",i,"</td>");
+	  else
+document.write("<td>",j*j,"</td>");
+} 이렇게 쓸수도 있다.-->

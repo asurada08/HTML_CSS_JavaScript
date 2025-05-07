@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>연습문제6</title>
+  <script>
+  function trip(b){
+	let a=prompt("");
+	if(a==null||a==""){
+		return;
+	}
+	b.innerHTML += a;
+  }
+  </script>
+ </head>
+ <body>
+  <h3>여름 여행지는</h3>
+  <hr>
+  <div>
+  <p onclick="trip(this)">이번 여름에는 어디로 여행을 갈까요?</p>
+  </div>
+  </body>
+</html>

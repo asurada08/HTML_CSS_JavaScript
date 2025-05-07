@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제1</title>
+  <!--브라우저 바깥으 아무곳이나 클릭하면 배경색을 yellow로 하고 브라우저 안쪽에 아무 곳이나 클릭하면 배경색을 green으로 하세요-->
+  <script>
+  window.onblur=function(e){
+	console.log(e);
+	document.body.style.backgroundColor="yellow";
+  }
+  window.onfocus=function(e){
+	console.log(e);
+	document.body.style.backgroundColor="green";
+  }
+  </script>
+ </head>
+ <body>
+  <h3>포커스와 onblur, onfocus</h3>
+  <hr>
+  <p>브라우저 바깥에 마우스르 클릭하면 window 객체에 blur 이벤트가 발생하고 다시 마우스를 클릭하면 window 객체에 focus 이벤트가 발생한다.</p>
+ </body>
+</html>

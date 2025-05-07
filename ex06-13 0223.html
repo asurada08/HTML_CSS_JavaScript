@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>비트연산</title>
+  <script>
+  //function 함수(매개변수명){처리할 내용; return 값;}
+  //호출: 리턴값을받는변수명=함수명(값);
+  function digit8(v){//숫자 v를 8비트 2진수로 변환
+	  console.log(v);//F12 해서 console에 가면 처리한 내용이 보임.
+	  let str="";//처리할내용
+	  //for(초기값;조건;증감값{반복처리할문;}
+	  for(let i=0;i<8;i++){
+		  if((v&0x80)) str+="1";
+		  else str+="0";
+		  v<<=1;
+	  }
+	  return str;//return 값
+  }
+  </script>
+ </head>
+ <body>
+  <h3>비트 논리 연산과 시프트 연산</h3>
+  <hr>
+  <script>
+  let x=10, y=3;
+  document.write("<pre>");
+  document.write("x=",x,", y=",y,"<br>");
+  document.write("x :        ",digit8(x),"<br>"); //x:10진수 10을 2진수로 변환
+  document.write("y :        ",digit8(y),"<br>"); //y:10진수 3을 2진수로 변환
+  document.write("<hr>");
+  document.write("x&y :      ",digit8(x&y),"<br>");
+  document.write("x|y :      ",digit8(x|y),"<br>");
+  document.write("x^y :      ",digit8(x^y),"<br>");
+  document.write("~x :       ",digit8(~x),"<br>");
+  document.write("<hr>");
+  document.write("x<<1 :     ",digit8(x<<1), " (",(x<<1),")<br>");
+  document.write("x>>1 :     ",digit8(x>>1), " (",(x>>1),")<br>");
+  document.write("x>>>1 :    ",digit8(x>>>1), " (",(x>>>1),")");
+  document.write("</pre>");
+  </script>
+ </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>HTML 문서 작성기 만들기</title>
+  <script>
+  /*
+  창이름.document -> (windows의 자식)지정한 창의 문서를 의미 함
+  window.close() ->전체창(windows)를 의미
+  창이름.document.close(); ->현재창의 문서 닫기 의미
+
+  창이름.document.write(요소); ->현재 열려있는(자식) 창에 출력한다
+  document.write(요소); -> 창이름이 생략되면 전체창(windows)을 의미
+  */
+  let win=null;//초기화 할때 null을 주로 사용함.
+  function showHTML(){
+	if(win==null||win.closed){
+		win=window.open("", "outWin","width=300,height=200");//열고자 하는 파일(url),창이름,창속성
+	}
+	let textArea=document.getElementById("srcText");
+	win.document.open();//생략가능
+	win.document.write(textArea.value);//창을 닫는것 아님 반환의 이미, 문서 닫기(document 객체를 쓰기 닫기)
+	win.document.close();
+	window.close();//전체 창 닫기
+  }
+  </script>
+ </head>
+ <body>
+  <h3>HTML 문서 작성기 만들기</h3>
+  <hr>
+  <p>아래에 HTML 문서를 작성하고 버튼을 클릭해 보세요. 새 윈도우에 HTML 문서가 출력됩니다.</p>
+  <textarea id="srcText" rows="10" cols="50"></textarea>
+  <br>
+  <br>
+  <button onclick="showHTML()">HTML문서 출력하기</button>
+ </body>
+</html>
+<!--문서 작성기에 넣을것
+<!doctype html>
+<html lang="en">
+<head><title>테스트 문서</title></head>
+<style>p{background-color:yellow}</style>
+<body>
+<p>문서 만들기 성공했어요<br>축하해 주세요.</p>
+<button onclick="javascript:self.close()">버튼</button>//자신의 창을 닫을때 이렇게 사용도 가능
+</body>
+</html>-->

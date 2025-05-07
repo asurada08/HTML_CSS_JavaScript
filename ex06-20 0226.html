@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>break문</title>
+ </head>
+ <body>
+  <h3>1에서 얼마까지 더해야 3000을 넘는가?</h3>
+  <hr>
+  <script>
+  let i=0, sum=0;
+  while(true){
+	  sum+=i;
+	  if(sum>3000){
+		  break;
+	  }
+	  i++;
+  }
+  document.write(i,"까지 더하면 3000을 넘음 : ",sum,"<br>");
+
+  let j=0, sum1=0;
+  do{
+	  sum1+=j;
+	  if(sum1>3000){
+		  break;
+	  }
+	  j++;
+	  document.write(j, " ");
+	  if(j%10==0){
+		  document.write("<br>");
+	  }
+  }while(true);
+  document.write("<br>",j,"까지 더하면 3000을 넘음 : ",sum1,"<br>");
+
+  let k=0, aa="", aa1="";
+  while(k<=20){
+	if(k%2==0){
+		aa += k+" ";
+	  
+	}else{
+		aa1 += k+" ";
+	}
+	k++;
+  }
+  document.write("짝수 : ",aa,"<br>","홀수 : ",aa1);
+
+  let y=0, str1="", str2="";
+  for(y=0;y<=20;y++){
+	if(y%2==0){
+		str1 += y+" ";
+	}else{
+		str2 += y+" ";
+	}
+  }
+  document.write("<br>짝수 : ",str1,"<br>","홀수 : ",str2);
+  </script>
+ </body>
+</html>

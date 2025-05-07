@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제5</title>
+  <!--setTimeout(), clearTimeout()을 이용해서 <div> 태그에 시계를 출력하시오.
+	웹 페이지가 로딩되면 현재 시간에서부터 계속 시간이 흐르게 하시오. -->
+  <style>
+  div{display:inline-block; width:10em; border:1px solid gray; background-color:#ffff99;}
+  </style>
+  <script>
+  function sWatch(){
+	let watch = document.getElementById("watch");
+	timeout(watch);
+  }
+  function timeout(a){
+	let b = new Date();
+	a.innerHTML= b.toLocaleTimeString();
+	setTimeout("timeout(watch)", 1000);	
+  }
+  </script>
+ </head>
+ <body onload="sWatch()">
+  <h3>div 태그에 시계 만들기</h3>
+  <hr>
+  <div id="watch"></div>
+ </body>
+</html>

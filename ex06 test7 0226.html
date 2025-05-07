@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제07</title>
+ </head>
+ <body>
+  <h3>prompt함수</h3>
+  <hr>
+  <script>
+  let a=prompt("수식 입력");
+  if(a==null){
+	  document.write("입력된 식이 없습니다");
+  }else{
+  let b=eval(a);
+  document.write(a," = ",b);
+  }
+  </script>
+ </body>
+</html>

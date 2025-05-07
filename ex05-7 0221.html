@@ -1,0 +1,29 @@
+<!--
+visibility:hidden; 화면에서 사라짐(영역있음) 사용자 접근성 향샹(O)
+visibility:visible; 화면에 보임
+display:inline; 요소를 블럭요소로 만듦(넓이, 높이, margin, padding 모두 적용, 엔터 포함
+display:inline; 요소를 인라인요소로 만듦(넓이, 높이(X), margin(세로(top, bottom) 적용(X), 가로(left, right) 적용가능,
+				엔터 없음 padding 적용됨
+display:inline-block; 요소를 블럭+인라인요소로 만듦(넓이, 높이 margin, padding 모두 적용, 한줄에 여러개 사용가능
+display:none; 화면에 영역까지 사라짐(접근성 향상 X)
+-->
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>visibility 프로퍼터</title>
+  <style>
+  span{/*visibility:hidden;*/color:white;}
+  span:hover{background-color:aliceblue; color:black;}/*span은 inline이라 hidden을 하면 hover를 먹이지 못함*/
+  </style>
+ </head>
+ <body>
+  <h3>다음 빈 곳에 숨은 단어?</h3>
+  <hr>
+  <ul>
+  <li>I (<span>love</span>) you.
+  <li>CSS is Cascading (<span>Style</span>) Sheet.
+  <li>응답하라 (<span>1994</span>).
+  </ul>
+ </body>
+</html>

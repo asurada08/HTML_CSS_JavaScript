@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>display 프로퍼터</title>
+  <style>
+  div{border:2px solid yellowgreen; color:blue; background:aliceblue;}
+  span{border:3px dotted red; background:yellow;}
+  </style>
+ </head>
+ <body>
+  <h3>인라인, 인라인 블록, 블록</h3>
+  <hr>
+  나는 <div style="display:none">div(none)</div>입니다.<br><br>
+  나는 <div style="display:inline">div(inline)</div>입니다.<br><br>
+  나는 <div style="display:inline-block">div(inline-block)</div>입니다.<br><br>
+  나는 <div>div<span style="display:block">span(block)</span>입니다.</div>
+ </body>
+</html>
+<!--:display
+display:block 항상 새라인/블록박스 내에만 배치/옆에 다른요소 배치X/width,height 크기 조절가능/padding,border,margin 조절가능
+display:inline 새라인 시작X/모든 박스 내 배치 가능/옆에 다른요소 배치가능/width,height 크기 조절X/margin-top,bottom 조절X
+display:inline-block 새 라인 시작X 라인 안에 있음/모든 박스 내 배치 가능/옆에 다른요소 배치가능/width,height 크기 조절가능/padding,border,margin 조절가능-->

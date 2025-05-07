@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>추가 예제</title>
+  <style>
+  table{width:200px;height:200px;font-size:20px;border-collapse:collapse;}/*표 윤곽선 선 합치기*/
+  td,tr{border:3px green solid}
+  </style>
+ </head>
+ <body>
+  <table>
+   <tr><!--3X3 표 그리기-->
+    <td>1</td>
+    <td>2</td>
+	<td>3</td>
+   </tr>
+   <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+   </tr>
+   <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+   </tr>
+  </table>
+  <hr><!--3X3 표에서 가로 합치기 colspan-->
+  <table>
+   <tr>
+    <td colspan="2">1</td>
+    <!--<td>2</td>-->
+    <td>3</td>
+   </tr>
+   <tr>
+    <td>4</td>
+    <td colspan="2">5</td>
+    <!--<td>6</td>-->
+   </tr>
+   <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+   </tr>
+  </table>
+  <hr> <!-- 3X3 표에서 세로 합치기 rowspan-->
+  <table>
+   <tr>
+    <td rowspan="2">1</td>
+    <td>2</td>
+    <td rowspan="3">3</td>
+   </tr>
+   <tr>
+    <!--<td>4</td>-->
+    <td>5</td>
+    <!--<td>6</td>-->
+   </tr>
+   <tr>
+    <td>7</td>
+    <td>8</td>
+    <!--<td>9</td>-->
+   </tr>
+  </table>
+  <hr>
+  <table><!--4X4 표 만들고 합치기-->
+   <tr>
+    <td colspan="3">1</td>
+    <!--<td>2</td>-->
+    <!--<td>3</td>-->
+    <td rowspan="4">4</td>
+   </tr>
+   <tr>
+    <<td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <!--<td>8</td>-->
+   </tr>
+   <tr>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <!--<td>12</td>-->
+   </tr>
+   <tr>
+    <td>13</td>
+    <td colspan="2">14</td>
+    <!--<td>15</td>-->
+    <!--<td>16</td>-->
+   </tr>
+  </table>
+ </body>
+</html>

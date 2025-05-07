@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제5</title>
+  <!--아래 이미지를 4개 배치하고 (spade-A.png  , spade-2.png, spade-3.png, spade-7.png) 
+  100 * 140, <div>  <img ~~~> </div> , style~~> img,div 절대위치 -->
+  <style>
+  div{position:absolute;}
+  img{position:absolute;}
+  </style>
+  <script>
+  function shuffle() {//클릭하면 맨위에 것이 맨아래로 바뀌게 
+	for(let i=0; i<imgArray.length; i++){
+		let obj = imgArray[i];
+		obj.style.zIndex++;
+		obj.style.zIndex %= imgArray.length;//앞에 나온것은 빼고 2번째꺼가 위에 나오게 하는 작업?
+	}
+}
+  </script>
+ </head>
+ <body>
+  <h3>카드 돌리기</h3>
+  <hr>
+  <div>
+  <img src="img/spade-A.png" width=100px; height=140px;>
+  <img src="img/spade-2.png" width=100px; height=140px;>
+  <img src="img/spade-3.png" width=100px; height=140px;>
+  <img src="img/spade-7.png" width=100px; height=140px;>
+  </div>
+  <script>
+  let imgArray=document.getElementsByTagName("img"); //이미지 태그 가져오기 
+  for(let i=0;i<imgArray.length; i++) {
+	let obj = imgArray[i];//이미지 i번째 배치
+	obj.style.zIndex=i;//카드 순서
+	obj.onclick = shuffle; // onclick 리스너 등록 //이미지 클릭시 위 아래 것 위치 변경
+  }
+  </script>
+ </body>
+</html>

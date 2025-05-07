@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제2</title>
+  <!--해당 라디오 버튼을 클릭했을 때 해당 이미지가 나오도록 하세요-->
+  <script>
+	function cci(){
+		let found=null;//라디오버튼이라 for문을 벗어나려고 변수 지정?
+		let check = document.getElementsByName("fruits");
+		let img = document.getElementById("fruitimage");
+		for(let i=0;i<check.length;i++){
+			if(check[i].checked){
+				found=check[i];
+				break;
+			}
+		}
+		img.src=found.value;
+	}
+  </script>
+ </head>
+ <body onload="cci()">
+  <h3>라디오 버튼을 클릭하면 이미지를 출력합니다</h3>
+  <hr>
+  <form>
+	<input type="radio" name="fruits" value="img/banana.png"  onchange="cci()">바나나
+	<input type="radio" name="fruits" value="img/mango.png" onchange="cci()">망고
+	<input type="radio" name="fruits" value="img/apple.png" checked onchange="cci()">사과
+  </form>
+  <img id="fruitimage" src="img/banana.png" alt="">
+ </body>
+</html>

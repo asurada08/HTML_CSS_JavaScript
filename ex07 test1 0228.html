@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제01</title>
+<!--아래 결과 화면 처럼 리스트의 아이템으로 출력하시오(배열을 이용하고, 반복문)
+	힌트 : let item=["라면","계란","물","파"]-->
+ </head>
+ <body>
+  <h3>라면을 만드는데 필요한 재료</h3>
+  <hr>
+  <script>
+  document.write("<ul>");
+  let item=["라면","계란","물","파","고춧가루","다진마늘","양파","김치"];
+  for(let i=0;i<item.length;i++){
+	document.write("<li>"+item[i]+"</li>");
+  }
+  document.write("</ul>");
+  </script>
+ </body>
+</html>

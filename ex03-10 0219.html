@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>라디오버튼 만들기</title>
+ </head>
+ <body>
+  <h3>먹고 싶은 것 하나만 선택?/캡션을 가진 라디오 버튼</h3>
+  <hr>
+  <form>
+  <input type="radio" name="china" value="1">짜장면<img src="img/jajang.png"><br>
+  <input type="radio" name="china" value="2">짬뽕<img src="img/jjambbong.png"><br>
+  <input type="radio" name="china" value="3" checked>탕수욕<img src="img/tangsuyuk.png"><br>
+    <!--ridio버튼은 같은 종류는 name을 써서 처리(배열) 이러지 않으면 나중에 수정하기 힘듬-->
+  </form>
+  <hr>
+  <h3>오늘 점심은?</h3>
+  <hr>
+  <form>
+  <select name="china">
+	<option value="1">짜장면</option>
+	<option value="2" selected>짬뽕</option>
+	<option value="3">탕수욕</option>
+  </select>
+  </form>
+  <hr>
+  <h3>로그인 폼</h3>
+  <hr>
+  <form name="fo" method="get">
+	<label>사용자 ID:<input type=:"text" size="15" value=""></label><br>
+	<label for="pass">비밀번호 :</label>
+	<input id="pass" type="password" size="15" value="">
+	<input type="submit" value="완료">
+  </form>
+  <hr>
+  <h3>먹고싶은것 하나만 선택?(&lt;label&gt;이용)<h3>
+  <hr>
+  <form>
+  <label>
+  <input type="radio" name="china" value="1">짜장면<img src="img/jajang.png"><br>
+  </label>
+  <label>
+  <input type="radio" name="china" value="2"checked>짬뽕<img src="img/jjambbong.png"><br>
+  </label>
+  <label>
+  <input type="radio" name="china" value="3">탕수욕<img src="img/tangsuyuk.png"><br>
+  </label>
+  </form>
+ </body>
+</html>

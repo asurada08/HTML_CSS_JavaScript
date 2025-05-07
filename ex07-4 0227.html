@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Array 객체의 메소드 활용</title>
+  <script>
+  function pr(msg,arr){document.write(msg,arr.toString(),"<br>");}
+  //arr.toString : arr배열에 값을 string으로 가지고와라
+  </script>
+ </head>
+ <body>
+  <h3>Array 객체의 메소드 활용</h3>
+  <hr>
+  <script>
+  let a=new Array("김","나","박");//pr이라는 함수(위에 작성함) 호출
+  let b=new Array("이"); //pr이라는 함수(위에 작성함) 호출
+  let c;//뒤에 쓰려고 선언.
+  a[0]="황";//0번째 값을 변경
+
+  pr("배열 a = ",a); //김,나,박
+  pr("배열 b = ",b); //이
+  document.write("<hr>");
+
+  c=a.concat(b);//c는 a와 b를 연결한 새 배열 //a값에 b값을 결합해서 c에 넣어라
+  pr("c=a.concat(b) 후 c = ",c); //김,나,박,이 //a값에 b값을 결합해서 c에 넣은후 c값을 출력해라
+  pr("c=a.concat(b) 후 a = ",a); //김,나.박 //a값에 b값을 결합해서 c에 넣은후 a값을 출력해라
+
+  c=a.join("@@");//c는 배열 a를 연결한 문자열 // a값 사이사이에 @@를 넣어 c에 넣어라
+  pr("c=a.join() 후 c = ",c); //김@@나@@박 //a값 사이사이에 @@를 넣어 c에 넣은후 c값을 출력
+  pr("c=a.join() 후 a = ",a); //김,나,박 //a값 사이사이에 @@를 넣어 c에 넣은후 a값을 출력
+
+  c=a.reverse();//a.reverse로 a 자체 변경 c는 배열 //a값을 꺼꾸로 변경하여 c에 넣어라
+  pr("c=a.reverse() 후 c = ",c); //박,나,김
+  pr("c=a.reverse() 후 a = ",a); //박,나,김 //a 자체가 변경해서 값이 변함.
+
+  c=a.slice(1,2);//c는 새 배열 //slice(1,2) 시작 인덱스(1) 부터 종료 인덱스값(2)을 포함하지 않는 배열을 c에 넣어라
+  pr("c=a.slice(1,2) 후 c = ",c); //나 //그래서 1번 값은 나 2번 값은 박 이지만 나만 들어감.
+  pr("c=a.slice(1,2) 후 a = ",a); //박,나,김
+
+  c=a.sort();//a.sort()는 a 자체 변경 c는 배열 //오름차순으로 정렬
+  pr("c=a.sort() 후 c = ",c); //김,나,박
+  pr("c=a.sort() 후 a = ",a); //김,나,박 //a 자체가 변경해서 값이 변함.
+
+  c=a.toString();//toStriong()은 원소 사이에 ","를 넣어 문자열 생성
+  document.write("a.toString() : ",c);//c는 문자열 //김,나,박
+
+  </script>
+ </body>
+</html>

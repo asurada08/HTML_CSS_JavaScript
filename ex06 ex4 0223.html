@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>선택문</title>
+ </head>
+ <body>
+  <h3>성별을 구별해 보자</h3>
+  <hr>
+  <script>
+  let gender=prompt("성별을 입력하세요 ex)남성 여성","");
+  /*if(gender=="남성"||gender=="남자"||gender=="men"){
+	  gender="남성";
+  }
+  else if(gender=="여성"||gender=="여자"||gender=="women"){
+	  gender="여성";
+  }
+  else{
+	  gender="중성";
+  }
+  document.write("당신은 ",gender,"이군요."); //if문*/
+    //조건 연산자로 변경((gender==남성)?(gender==남성):(gender==여성)?(gender==여성):(gender==중성))
+  document.write(((gender=="남성")?(gender=="남성"):(gender=="여성")?(gender=="여성"):(gender=="중성")));
+  document.write("당신은 ",gender,"이군요.");
+/*  switch(성별){
+	  case "남성":
+	  gender="남성";
+	  document.write("당신은 ",gender,"이군요.");
+	  break;
+	  case "여성":
+	  gender="여성";
+	  document.write("당신은 ",gender,"이군요.");
+	  break;
+	  default:
+	  gender="중성"
+	  document.write("당신은 ",gender,"이군요.");
+	  break;//switch문
+  }*/
+  </script>
+ </body>
+</html>

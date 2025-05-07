@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제02</title>
+<!--1~100 사이의 난수 10개를 생성하고, 배열에 저장한 후 배열에 저장된 수 중 가장 큰 수를 출력하시오-->
+  <script>
+  </script>
+ </head>
+ <body>
+  <h3>난수 10개 생성</h3>
+  <hr>
+  <script>
+  let arr=[];//배열 전역변수로 선언
+  let max=0;//최대값 받을 곳 선언 //초기값을 가장 적은 값, 0번재를 넣었음
+  for(let i=0;i<10;i++){//10개의 난수 생성
+	arr[i]=Math.floor(Math.random()*100+1);
+	document.write(arr[i],"&nbsp");//10개의 난수 출력
+	//최대값 구하기
+	if(max<arr[i]){
+		max=arr[i];
+	}
+  }
+  document.write("<hr>제일 큰 수는 : ",max,"<br><hr>");//최대값 출력
+  arr.sort();
+  for(let i=0;i<10;i++){
+	document.write(arr[i],"&nbsp");//오름차순 한 값 출력
+  }
+  </script>
+ </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>셀렉터 만들기</title>
+  <style>/* *:모든 선택자 .:class(여러개를 같은 클래스로 묶어서 설정가능) 선택자 #:id(하나만 사용할수 있음) 선택자(현재 페이지에서) */
+  h3, li{color:brown;}
+  .warning{color:red;}
+  body.main{background:aliceblue;}
+  #list{background:mistyrose;}
+  ul strong{color:dodgerblue;}/*자손 셀렉터 22줄 <strong>에 적용됨*/
+  div > strong{background:yellow;}/*자식 셀렉터 19줄 <strong>에 적용됨*/
+  h3:first-letter{color:red;}/*:first-letter 첫글자에 스타일 적용*/
+  li:hover{background:yellowgreen;}/*:hover 마우스가 올라갈 때 스타일 적용*/
+  </style>
+ </head>
+ <body class="main">
+  <h3>Web Programming</h3>
+  <hr>
+  <div>
+	<div>2학기 <strong>학습 내용</strong></div>
+	<ul id="list">
+	<li>HTML5</li>
+	<li><strong>CSS</strong></li>
+	<li>JAVASCRIPT</li>
+	</ul>
+  <div class="warning">60점 이하는 F!</div>
+  </div>
+ </body>
+</html>

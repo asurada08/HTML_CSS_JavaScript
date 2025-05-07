@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>addEventListener()를 이용한 리스너 등록</title>
+  <!--9-2 예제를 addEventListener() 이용해 코드 작성-->
+  <script>
+  let p;
+  function init(){
+	  p=document.getElementById("p");//문서가 완전히 로드 되었을 때 호출
+	  p.addEventListener("mouseover",over);//addEventListener 메소드로 등록  
+	  p.addEventListener("mouseout",out);//addEventListener 메소드로 등록 
+  }
+  function over(){
+	p.style.backgroundColor="orchid";
+  }
+  function out(){
+	p.style.backgroundColor="white";
+  }
+  </script>
+ </head>
+ <body onload="init()"> <!--여기선 바디가 로드 되면 init()함수를 바로 호출하게 함-->
+  <h3>addEventListener()를 이용한 리스너 등록</h3>
+  <hr>
+  <p id="p">마우스를 올리면 orchid 색으로 변경</p>
+ </body>
+</html>

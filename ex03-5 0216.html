@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>로그인 폼</title>
+ </head>
+ <body>
+  <form name="fo" method="post" action="서버주소">
+  <!--get 방식은 header에 주소를 붙여 보냄 보안에 취약함 post 방식은 body에 주소를 묻어 보냄 보안에 강하고 사이즈도 작음-->
+  사용자 ID : <input type="text" name="id" size="15" value=""><br>
+  비밀 번호 : <input maxlength="4" type="password" name="pw" size="15" value=""><br>
+  <!--password라고 써서 실행하면 ●●식으로 뜸 -->
+  자기소개서 :<textarea cols="20" rows="5">이곳에 자기소개서 작성</textarea><br>
+		   <input type="submit" value="완료"><!--submit 함수-->
+  </form>
+ </body>
+</html>
+<!--실행을 하여 완료를 눌렀을때 file:///D:/java_class/html_work/ex3-5%200216.html?라고 뜸 서버로 보내야 하는데 html이라 한계가 있음 JSP(서버쪽 프로그래밍 언어) 등으로 작성해야 하고 서버로 가야하는데 갈 곳이 없음.-->

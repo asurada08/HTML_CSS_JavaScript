@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>익명 함수로 이벤트 리스너 등록</title>
+  <!--9-2 예제를 -->
+  <script>
+  let p;
+  function init(){
+	p=document.getElementById("p");//문서가 완전히 로드 되었을 때 호출
+	p.onmouseover=function(){//익명함수 일회성으로 사용할때 구동이 간단할때 사용 반복사용하려면 다른 방법을 쓰는것이 좋음.
+		this.style.backgroundColor="orchid";
+		};
+	p.addEventListener("mouseout",function(){this.style.backgroundColor="white";});
+	//addEventListener에 익명함수 처리 코드가 짧거나 한곳에 사용할때 사용(위에 말이랑 같은말 ppt에 내용)
+	}
+  </script>
+ </head>
+ <body onload="init()"> <!--여기선 바디가 로드 되면 init()함수를 바로 호출하게 함-->
+  <h3>익명 함수로 이벤트 리스너 등록</h3>
+  <hr>
+  <p id="p">마우스를 올리면 orchid 색으로 변경</p>
+ </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>스크린 장치에 관한 정보 출력</title>
+  <script>
+  function printScreen(){
+	  let text = "availHeight : ".fontcolor("blue")+screen.availHeight+"<br>";//작업표시줄 높이 제외
+	  text += "availWidth : ".fontcolor("blue")+screen.availWidth+"<br>";
+	  text += "colorDepth : ".fontcolor("blue")+screen.colorDepth+"<br>";//픽셀당 2에24승색
+	  text += "pixelDepth : ".fontcolor("blue")+screen.pixelDepth+"<br>";
+	  text += "height : ".fontcolor("blue")+screen.height+"<br>";
+	  text += "width : ".fontcolor("blue")+screen.width+"<br>";//스크린 크기
+	  //width height는 브라우저 설정에서 확대/ 축소 값을 100%로 해야 정확한 값으로 출력됨
+	
+	document.getElementById("div").innerHTML=text;
+  }
+  </script>
+ </head>
+ <body onload="printScreen()">
+  <h3>스크린 장치에 관한 정보</h3>
+  <hr>
+  <div id="div"></div>
+ </body>
+</html>

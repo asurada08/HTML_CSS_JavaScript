@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>기본 구조를 가진 표 만들기</title>
+  <style>
+  table{border-collapse:collapse;}
+  td, th{text-align:center; padding:10px; width:100px; height:20px;}
+  thead{background:darkgray; color:gold;}
+  td,tfoot,th{border-bottom:1px solid gray;}
+  </style>
+ </head>
+ <body>
+  <h3>1학기 성적</h3>
+  <hr>
+  <table>
+  <thead>
+  <tr><th>이름</th><th>HTML</th><th>CSS</th></tr>
+  </thead>
+  <tfoot>
+  <tr><th>합</th><th>175</th><th>169</th></tr>
+  </tfoot>
+  <tbody>
+  <tr><td>김강희</td><td>95</td><td>99</td></tr>
+  <tr><td>제임스</td><td>80</td><td>70</td></tr>
+  </tbody>
+  </thead>
+ </body>
+</html>

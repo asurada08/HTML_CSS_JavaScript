@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>선의 색과 굵기</title>
+ </head>
+ <body>
+  <h3>선의 색과 굵기</h3>
+  <hr>
+  <canvas id="mc" style="background-color:lightpink" width="180" height="300"></canvas>
+  <script>
+  let canvas = document.getElementById("mc");
+  let context = canvas.getContext("2d");
+  //1px blue 직선 그리기
+  context.beginPath();
+  context.moveTo(20,20);
+  context.lineTo(150,50);
+  context.strokeStyle="blue";
+  context.stroke();
+  //10px yellowgreen 사각형그리기
+
+  //20px violet 색 원호 그리기
+  </script>
+ </body>
+</html>

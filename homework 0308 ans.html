@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>답지</title>
+    <style>
+		h3{text-align: center;}
+        form{background-color: lightgoldenrodyellow;}
+    </style>
+    <script>
+        function sub(){
+			let result;
+            let sung = document.getElementsByName("sung");
+            let pyeoga = document.getElementsByName("pyeoga");
+            let see = document.getElementsByName("see");
+			let remark = document.getElementsByName("remark");
+            if(g[i].checked==true){
+                result += g[0].value+"\n";
+			}else{
+				result += g[0].value+"\n";
+            }
+			for(let i=0;i<pyeoga.length;i++){
+                if(pyeoga[i].checked){
+                    result += pyeoga[i].value+"\n";
+				}
+			}
+			for(let i=0;i<see.lenght;i++){
+                if(see[i].checked){
+                    result += see[i].value+" ";
+				}
+			}
+            result += "\n"+remark[0].value;
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+	<form>
+    <h3>온라인 앙케이트</h3>
+    <hr>
+    1. 성별<br>
+        남 <input type="radio" name="sung" value="남">
+        여 <input type="radio" name="sung" value="여"><br><br>
+    2. 본사의 제품을 평가한다면?<br>
+        매우만족 : <input type="radio" name="pyeoga" value="매우만족">
+        그저 그렇다 : <input type="radio" name="pyeoga" value="그저그렇다">
+        불만족스럽다 : <input type="radio" name="pyeoga" value="불만족스럽다">
+    <p>3. 가장 자주 사용하는 검색엔진은?</p>
+        심마니 : <input type="checkbox" name="see" value="심마니">
+        네이버 정보탐정 : <input type="checkbox" name="see" value="네이버 정보탐정">
+        야후 : <input type="checkbox" name="see" value="야후">
+        라이코스 : <input type="checkbox" name="see" value="라이코스">
+        알타비스타 : <input type="checkbox" name="see" value="알타비스타"><br><br>
+    4. 본사에게 하고 싶은 말은?<br>
+    <textarea id="remark" name="remark" rows="4" cols="65"></textarea><br><br>
+    <center>
+        <button id="b1" onclick="sub()" value="앙케이트 제출">앙케이트 제출</button> <button id="b2" type="reset" value="앙케이트 취소">앙케이트 취소</button>
+    </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>함수</title>
+  <script>
+  function adder(a, b){//1.함수 호출
+	let sum;
+	sum=a+b;
+	return sum;
+  }
+  function result(c,d){//2.
+	alert("c="+c+"\nd="+d);
+  }
+  function result2(c,d){//3.
+	  alert("값 받지 않았고, 돌려줄 값도 없음");
+  }
+  function result3(){//4.
+	  alert("값 받지 않았고, 돌려줄 값 있음");
+	  return "나 받아라";
+  }//==return
+  </script>
+ </head>
+ <body>
+  <h3>함수 adder()</h3>
+  <hr>
+  <script>
+  let n=adder(24567,98374);//1 함수호출
+  document.write("24567 + 98374는 ",n,"<br>");
+  result(100,200);//2.반환값 없음
+  result2();//3.인자값 없고, 리턴값 없음
+  let c=result3();//4.인자값 없고, 리턴값 없음
+  alert(c);
+  console.log("c=",c);//에러 잡을때 많이 사용
+
+  </script>
+ </body>
+</html>

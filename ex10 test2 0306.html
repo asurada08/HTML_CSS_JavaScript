@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제2</title>
+  <!--1번 문제를 조금 수정하여 스크린을 기준으로 (500, 400)위치에 출력하고, 새창의 창이름을 "환영합니다." 으로 지정하고, 문서내용 뒤에 "5교시에 접속했군요." 내용 추가, 바탕색을 yellowgreen으로 출력하시오.-->
+  <script>
+  function newWin(){
+	let nW=window.open("","","left=1000,top=300,width=500,height=400");
+	nW.document.write("접속 감사합니다!<br>5교시에 접속했군요");
+	nW.document.title="환영합니다!";
+	nW.document.body.style.backgroundColor="yellowgreen";
+	nW.document.close();
+  }
+  </script>
+ </head>
+ <body onload="newWin()">
+  <h3>HTML5</h3>
+  <hr>
+  <p>HTML5를 학습하는 사이트 입니다. 여기서 HTML5, CSS3, 자바 스크립트를 배울 수 있습니다.</p>
+ </body>
+</html>

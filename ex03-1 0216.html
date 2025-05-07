@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>HTML5 문서 구조 시맨틱 태그 사용</title>
+  <style>
+   html,body{margin:0; padding:0; height:100%;}/*기본 margin공간 위8오8아8왼8/ padding공간 상태를 0으로 초기화 한 상태*/
+   header{width:100%; height:15%; background:yellow;}/*떠다니는 박스를 왼쪽/오른쪽으로 배치:어울림*/
+   nav{width:15%; height:70%; float:left; background:orange;}/*요소들이 위치를 float 사용하여 왼쪽정렬 한상태*/
+   section{width:70%; height:70%; float:left; background:olivedrab;}
+   aside{width:15%; height:70%; float:left; background:orange;}/*박스를 왼쪽/오른쪽으로 배치한 것을 삭제, 자리차지*/
+   footer{width:100%; height:15%; clear:both; background:plum;}/*앞에 정의한 float를 초기화 한것*/
+  </style>
+ </head>
+ <body>
+  <header>header</header>
+  <nav>nav</nav>
+  <section>section</section>
+  <aside>aside</aside>
+  <footer>footer</footer>
+ </body>
+</html>

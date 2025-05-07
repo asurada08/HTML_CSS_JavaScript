@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제4</title>
+  <!--onmousemove를 이용하여 웹페이지에 마우스가 움질일 때 이미지를 마우스 커서처람 사용하도록 하고, 이미지 사이즈는 30px*30px 크기로 하세요-->
+  <style>
+  div{position:absolute;}
+  img{width:30px; height:30px;}
+  </style>
+  <script>
+  let bob;
+  function mouse(){//커서 이미지를 가진 <div> 객체
+	bob=document.getElementById("bob");
+	document.onmousemove=function(e){//onmousemove 이벤트 발생
+		bob.style.left=e.clientX+"px";//좌표값이기 때문에 "px"를 꼭 붙여야 함.
+		bob.style.top=e.clientY+"px";
+	}
+  }
+  </script>
+ </head>
+ <body onload="mouse()">
+  <h3>이미지커서 만들기</h3>
+  <hr>
+  <p>마우스를 움직이면 이미지로 만든 커서가 마우스를 따라 다닙니다</p>
+  <div id="bob"><img src="img/spongebob.png"></div>
+ </body>
+</html>

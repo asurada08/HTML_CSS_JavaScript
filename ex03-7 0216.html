@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>데이터 목록을 가진 텍스트 입력</title>
+ </head>
+ <body>
+  <h3>가보고 싶은 곳</h3><!--list는 html5에서 생김-->
+  <hr>
+  <form>
+	나라:<input type="text" list="countries"><br>
+	<datalist id="countries">
+	<option value="영국">
+	<option value="몰디브">
+	<option value="스위스">
+	</datalist>
+	보고싶은것:<input type="text" list="what"><br>
+	<datalist id="what">
+	<option value="산">
+	<option value="바다">
+	<option value="도시">
+	</datalist>
+	선택:<select multiple size="2"><!--선택할수 있는 숫자를 다르게 정할수 있음.-->
+	<option value="산">산</option>
+	<option value="바다">바다</option>
+	<option value="도시">도시</option>
+	</select><!--datalist와 select 의 차이점이 있음 보고 확인-->
+  </form>
+ </body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>확인 다이얼로그</title>
+ </head>
+ <body>
+  <script type="text/javascript">
+	function a(){
+		let ret=confirm("전송할까요?");
+		if(ret==true){
+			document.write("\"알겠습니다\"");
+		}
+		else{
+			document.write("\"왜 취소해?\"");
+		}
+	}
+  </script>
+  <a href="javascript:a()">눌러봐</a>
+ </body>
+</html>

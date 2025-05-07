@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제01</title>
+ </head>
+ <body>
+  <h3>키보드로 지역을 선택해서 지역번호를 알아내시오(switch문 사용)<h3>
+  <hr>
+  <script>
+  let n="";
+  A: while(true){
+	n=prompt("지역을 입력해주세요","");
+	let n2="";
+	switch(n){
+		case "서울":n2="02";
+		break;
+		case "경기":n2="031";
+		break;
+		case "부산":n2="051";
+		break;
+		case "그만": break A;
+		default:
+		n2="서울, 경기, 부산 이외의 지역";
+	}
+	alert(n+"의 지역번호는 "+n2+"입니다.");
+}
+	document.write("그만...");
+  </script>
+ </body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>태그에 자바스크립트 코드</title>
+  <script>
+  /*internal=embaded 방식*/
+  function over(ojb){ojb.src="img/banana.png";}
+  function out(ojb){ojb.src="img/apple.png";}
+  </script>
+ </head>
+ <body>
+  <h3>마우스를 올려보세요<h3>
+  <hr>
+  <!--inline 방식-->
+  <img src="img/apple.png" alt="이미지" onmouseover="over(this)" onmouseout="out(this)">
+  <!--this는 현재 img 태그를 가리키는 자바스크립트 키워드
+	over, out, ojb는 그냥 이름 내가 지어내면 됨. -->
+ </body>
+</html>

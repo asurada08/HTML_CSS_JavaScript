@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>ex3 test</title>
+  <style>
+  .subm{
+	display:block;/*블록 요소로 변경*/
+	background-color:#fff; border:1px solid #dedede;
+	cursor:pointer;/*손가락 모양*/
+	padding:5px 10px 6px 7px;/*컨텐츠와의 간격(여백)*/
+	}
+  .subm img{/*이미지의 테두리 없고 넓이, 높이*/
+  border:0; padding:0; width:16px; height:16px;
+  }
+  .subm:hover{/*마우스 오버시*/
+  background-color:#e6efc2;
+  border:1px solid #c6d880;
+  color:#529215;
+  }
+  </style>
+ </head>
+ <body>
+  <form>
+  <!-- <input type="submit" value="전송하기"> -->
+  <button type="submit" class="subm">전송하기<img src="img/button.png" alt=""></button>
+  </form>
+  <hr>
+  <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)"><!--parseInt 숫자로 바꾸는 함수-->
+  <input type="number" name="num1" value="0">+
+  <input type="number" name="num2" value="0">=
+  <output name="result" for="num"></output>
+  <!--<output> : 계산 결과를 브라우저에 표시-->
+  </form>
+ </body>
+</html>

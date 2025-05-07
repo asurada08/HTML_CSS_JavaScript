@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>링크 만들기</title>
+  <style>
+  img{width:100px;height:50px;}/*이미지 사이즈 전체 조정*/
+  </style>
+ </head>
+ <body>
+  <h3>링크 만들기</h3>
+  <hr>
+  <b>포털 사이트</b>
+  <ul>
+   <li><a href="http://www.naver.com"><img src="img/naver.png" alt="네이버">네이버</a>
+   <li><a href="http://www.daum.net"><img src="img/daum.png" alt="다음">다음</a>
+  </ul>
+  <hr>
+  <i>신문 사이트</i>
+  <ul>
+   <li><a href="http://www.etnews.com"><img src="img/iconetnews.png" alt="전자신문"></a>
+   <li><a href="http://www.chosun.com"><img src="img/iconchosun.png" alt="조선일보"></a>
+  </ul>
+  <hr>
+   <li><a href="ex2-17 0215.html">예제 2-17로 이동</a>
+  <hr>
+  <h3>링크의 target 속성 활용</h3>
+  <hr>
+  <ul>
+   <li><a href="http://www.w3.org" target="_blank">W3C(새 윈도우, _blank)</a><!--새 텝에 열림-->
+   <li><a href="http://www.etnews.com" target="_self">전자신문(현재 윈도우,_self)</a><!--현재 탭에서 열림-->
+   <li><a href="http://www.naver.com" target="_parent">네이버(부모 윈도우,_parent)</a>
+   <!--링크된 문서를 현재 프레임의 부모 프레임에서 열림 과거 자료 HTML5에선 쓰지 않음-->
+   <li><a href="http://www.mk.co.kr" target="_top">매일경제신문(브라우저 윈도우,_top)</a>
+   <!--링크된 문서를 현재 윈도우에서 열림 HTML5에선 쓰지 않음-->
+  </ul>
+ </body>
+</html>

@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <mata charset="utf-8">
+ <title>웹 페이지의 구성 요소</title>
+ <style>/*맵 -> {키:값/송성:값; 속성:값}*/ /*모양 줄떄*/
+ body{background-color:linen; color:green; margin-left:40px; margin-right:40px;}
+ h3{text-align:center; color:darkred;}
+ hr{/*height:5px;*/ border:solid gray 10px; background-color:gray;} /*두깨는 hight(높이)로 처리가능*/
+ span{color:blue; font-size:20px;}
+ #fig{}/*css 주석 id를 사용할 때는 #,*/
+ .fig1{} /*class를 사용할 때는 . */
+ </style>
+ <script> /*동작을 줄때*/
+ function show(){document.getElementById("fig").src="img/ElvisPresley.png"}
+ function hide(){document.getElementById("fig").src=""}
+ </script>
+ </head>
+ <body>
+ <h3 onmouseover="show()"onmouseout="hide()">Elvis Presley</h3>
+ <hr>
+ <div style="border:solid red 2px"><img id="fig" src=""></div> <!-- 입력한 대로 나오게 하고 싶으면 pre /pre 쓰면됨-->
+ He was an American singer and actor. <br>In November 1956, he made his film debut in <span>Love Me Tender</span>. <p>He is often referred to as "<span>the King of Rock and Roll</span>".
+ </body>
+ </html>

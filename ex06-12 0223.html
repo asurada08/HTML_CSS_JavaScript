@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>조건 연산자</title>
+ </head>
+ <body>
+  <h3>조건연산자</h3>
+  <hr>
+  <script>
+  let a=3, b=5;
+  document.write("a=",a,", b=",b,"<br><br>");
+  document.write("두수의 차이 : ",((a>b)?(a-b):(b-a)));// a가 b보다 크냐? 크면 (a-b)를 수행 / 작으면 (b-a)를 수행
+  if(a>b){
+	  document.write("<br>",a-b);
+  }
+  else{
+	  document.write("<br>",b-a);
+  }
+  </script>
+ </body>
+</html>

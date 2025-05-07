@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>숙제</title>
+ </head>
+ <body>
+ <script>
+  document.write("<h3>2월</h3>");
+  document.write("&nbsp일&nbsp&nbsp월&nbsp&nbsp화&nbsp&nbsp수&nbsp&nbsp목&nbsp&nbsp금&nbsp&nbsp토<br>");
+  for(let i=1;i<=33;i++){
+	if(i<5){
+		document.write("&nbsp&nbsp&nbsp&nbsp&nbsp");
+	}else{
+		if(i-4<8){
+			document.write("&nbsp&nbsp",i-4,"&nbsp");
+		}else if(i-4>7&&i-4<10){
+			document.write("&nbsp&nbsp&nbsp",i-4,"&nbsp");
+		}		else{
+			document.write("&nbsp",i-4,"&nbsp");
+		}
+	}
+    if(i%7 == 0){
+	document.write("<br>");
+	}
+  }
+	document.write("<br><br>");
+  	document.write("<pre>일    월    화   수   목    금   토 </pre>");
+	document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");	 //26개
+	for(let j=1;j<=10;j++){
+		if(j<=8 ){
+			document.write(j+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");	
+			if(j==3) document.write("<br>");
+		}else{
+			document.write(j+"&nbsp;&nbsp;&nbsp;");
+		}
+	}
+	document.write("<br>");
+	for(let i=1;i<20;i++){
+		document.write((i+10)+"&nbsp&nbsp ");
+		if(i%7==0) document.write("<br>");
+	}
+
+	str = "";
+
+str += "<pre>";
+str += "일 월 화 수 목 금 토 <br>";
+str += " ";
+
+for(let i = 0 ; i < 28; i++){
+
+if(i > 9)
+str += (i + 1) + " ";
+else
+str += (i + 1) + " ";
+
+if(i % 7 == 2)
+str+= "<br>";
+
+}
+
+str+= "</pre>";
+document.write(str);
+ </script>
+ </body>
+</html>

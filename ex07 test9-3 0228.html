@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제9</title>
+  <script>
+	function Book(title, auther, price){
+		this.title=title;
+		this.auther=auther;
+		this.price=price;
+	}
+  </script>
+ </head>
+ <body>
+  <h3>book 객체 만들기</h3>
+  <hr>
+  <script>
+  let book=new Book("HTML5","황기태",20000);
+  document.write("book : ");
+  document.write(book.title,", ");
+  document.write(book.auther,", ");
+  document.write(book.price,"<br>");
+  </script>
+ </body>
+</html>

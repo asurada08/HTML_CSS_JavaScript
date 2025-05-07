@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제1</title>
+  <!--아래 페이지가 로딩될 때 "접속 감사합니다!" 라는 문자을 담은 200 * 100사이즈의 새 창을 출력하시오.-->
+  <script>
+  function newWin(){
+	  let nW=window.open("","","left=1000,top=300,width=200,height=100");
+	  nW.document.write("접속 감사합니다!<br>");
+	  nW.document.close();
+  }
+  </script>
+ </head>
+ <body onload="newWin()">
+  <h3>HTML5</h3>
+  <hr>
+  <p>HTML5를 학습하는 사이트 입니다. 여기서 HTML5, CSS3, 자바 스크립트를 배울 수 있습니다.</p>
+ </body>
+</html>

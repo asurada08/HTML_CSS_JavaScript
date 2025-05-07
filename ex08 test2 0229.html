@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제2</title>
+  <!--<ol> 태그를 클릭하면 아래처럼 바탕색을 주세요.(색은 알아서...)-->
+  <script>
+  function change(){
+	let olColor=document.getElementsByTagName("ol");
+	for(let i=0;i<olColor.length;i++){
+		let ol=olColor[i];
+		ol.style.backgroundColor="green";
+	}
+  }
+  </script>
+ </head>
+ <body>
+  <h3>라면을 끓이는 순서</h3>
+  <hr>
+  <ol type="A" onclick=change()>
+  <li>물을 끓인다</li>
+  <li>라면과 스프를 넣는다</li>
+  <li>파를 썰어 넣는다</li>
+  <li>5분후 <strong>맛있게</strong> 먹는다</li>
+  </ol>
+ </body>
+</html>

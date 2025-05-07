@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>연습문제1</title>
+  <!--아래 내용을 참고하여 자바스크립트로 li요소를 찾아 초록색으로 표현하세요
+  힌트 getElementByTagName()사용
+  라면을 끓이는 순서
+  -------------
+  A. 물을 끓인다
+  B. 라면과 스프를 넣는다
+  C. 파를 썰어 넣는다
+  D. 5분후 맛있게 먹는다-->
+  <script>
+  function change(){
+	let liColor=document.getElementsByTagName("li");
+	for(let i=0;i<liColor.length;i++){
+		let li=liColor[i];
+		li.style.color="green";
+	}
+  }
+  </script>
+ </head>
+ <body onload="change()">
+  <h3>라면을 끓이는 순서</h3>
+  <hr>
+  <ol type="A">
+  <li>물을 끓인다</li>
+  <li>라면과 스프를 넣는다</li>
+  <li>파를 썰어 넣는다</li>
+  <li>5분후 맛있게 먹는다</li>
+  </ol>
+ </body>
+</html>

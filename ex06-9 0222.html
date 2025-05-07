@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>대입연산</title>
+ </head>
+ <body>
+  <h3>대입연산</h3>
+  <hr>
+  <script>
+  let x=3, y=3, z=3, a=2, b=2;
+  //write()에서는 "+ "/"," 연결연산자 : 앞 내용과 뒷 내용을 붙여라
+  //비교연산자(관계연산자,동등연산자) 우선순위 (1순위) ">"/"<"/">="/"<=" (2순위) "=="/"!="
+  //==값만 비교 / ===값과 타입비교
+  document.write("x=",x,", y=",y,", z=",z);
+  document.write(", a=",a,", b=",b"<br><br>");
+
+  x+=3;// x=x+3=3+3=6
+  y*=3;// y=y*3=3*3=9
+  z%=2;// z=z%2=3%2=1
+  a=++a;//a=1+a=1+2=3
+  b=b++;
+
+  document.write("x+=3; 실행 후, x=",x,"<br>");
+  document.write("y*=3; 실행 후, y=",y,"<br>");
+  document.write("z%=2; 실행 후, z=",z	,"<br>");
+  document.write("a=++a; 실행 후, a=",z,"<br>");
+  document.write("b=b++; 실행 후, b=",z,"<br>");
+  </script>
+ </body>
+</html>

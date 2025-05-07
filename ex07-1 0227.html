@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>객체 생성 및 활용</title>
+ </head>
+ <body>
+  <h3>객체 생성 및 활용</h3>
+  <hr>
+  <script>
+  let today=new Date();//Date라는 객체를 생성 
+  document.write("현재시간 : ",today.toLocaleString(),"<br>");//Date라는 객체의 toLocaleString()라는 메소드(함수) 호출
+
+  let mystr=new String("자바스크립트 공부하기");//String라는 객체를 생성
+  document.write("mystr의 내용 : ",mystr,"<br>");
+  document.write("mystr의 길이 : ",mystr.length,"<br>");//String객체에 length라는 프로퍼티(속성) 읽기
+  </script>
+ </body>
+</html>

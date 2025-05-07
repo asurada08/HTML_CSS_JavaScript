@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>CSS 스타일 동적 변경</title>
+  <script>
+  /*
+  HTML의 요소를 자바스크립트 내에 가져 올때
+  document.getElementById("아이디");// 한개
+  document.getElementsByClassName("클래스명");// 여러개, 배열
+  document.getElementsByTagName("태그명");// 여러개, 배열
+  document.getElementsByName("이름");//<input name="n">//여러개, 배열
+  오소명.innerHTML//태그와 글자 모드 적용
+  오소명.innerText==요소명.TextContent//글자만 적용 / 자바스크립트에선 이놈을 많이 사용함.
+  */
+  function change(){
+	let span=document.getElementById("myspan");//id 부분을 가지고 옴.
+	span.style.color="green";//글자 색 green
+	span.style.fontSize="30px";//글자 크기는 30px
+	span.style.display="block";//블록 박스로 변경
+	span.style.width="6em";//박스의 폭 6 글자 크기
+	span.style.border="3px solid purple";//3px 실선 보라
+	span.style.margin="20px";//상하좌우 여백 20px
+  }
+  </script>
+ </head>
+ <body>
+  <h3>CSS 스타일 동적 변경</h3>
+  <hr>
+  <p style="color:blue">이것은<span id="myspan" style="color:red"> 문장입니다.</span></p>
+  <input type="button" value="스타일 변경" onclick="change()">
+ </body>
+</html>

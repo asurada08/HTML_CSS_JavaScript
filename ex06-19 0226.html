@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>do-while문</title>
+ </head>
+ <body>
+  <h3>do-while문으로 0에서 n까지 합</h3>
+  <br>
+  <script>
+  //do{실행할 문장;}while(조건); 무저건 한번은 수행함. 그리고 조건이 참이면 {}문장을 수행함.
+  //for(시작값=초기값;조건=끝나는값;증감값){반복 실행문;}
+  //while(){참인 경우 처리할 문장} 조건이 만족하지 않으면 한번도 수행 안함.
+  let n=prompt("0보다 큰 정수를 입력하세요",0);
+  n=parseInt(n);
+  let i=0, sum=0;
+  do{
+	  document.write(i, "<br>");
+	  sum+=i;
+	  i++;
+  }while(i<=n);
+  document.write("0에서 ",n,"까지 합은 ",sum);
+  </script>
+ </body>
+</html>

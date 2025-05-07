@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>방문시간에 따라 변하는 배경색</title>
+ </head>
+ <body>
+  <h3>페이지 방문 초 시간이 짝수이면 violet, 홀수이면 lightskyblue 배경</h3>
+  <hr>
+  <script>
+  let n=0;//값이 변해야하기 때문에 전역변수로 넣음.
+  function a(){
+	n++;
+	if(n==10) clearInterval(s);//n이 10이 되면 반복 멈춤
+  let current=new Date();//현재 시간을 가진 Date 객체 생성
+  if(current.getSeconds()%2==0){//초를 가지고 와서 2로 나눴을때 나머지가 0일때 보라로 변경
+	document.body.style.backgroundColor="violet";//자바스크립트 형식 객체 속성을 가지고 옴(복합어에 첫글자는 대문자로).
+	//document.body.style="background-color:violet" //css형식
+  }else{//아니면 하늘색으로 바탕색을 변경.
+	document.body.style.backgroundColor="lightskyblue";
+  }
+  document.write("현재시간 : ");
+  document.write(current.getHours(),"시,");
+  document.write(current.getMinutes(),"분,");
+  document.write(current.getSeconds(),"초<br>");
+  }
+  //수행할 함수, 지연시간
+  let s=setInterval(a, 1000)//setInterval 1초간격으로 a 함수를 수행하라
+  </script>
+ </body>
+</html>
